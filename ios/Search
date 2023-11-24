@@ -1,0 +1,36 @@
+//
+//  Search.swift
+//  ios
+//
+//  Created by Елизавета Скороженко on 21.11.2023.
+//
+
+import SwiftUI
+
+struct Search: View {
+    var body: some View {
+        Button(action:{}) {
+            
+            HStack {
+                Image(systemName: "magnifyingglass")
+                
+                Text("Search doctor or health issue")
+                    .font(.custom("Poppins", size: 15))
+                    .foregroundColor(Color.gray)
+            }
+            .padding()
+            Spacer()
+        }
+        .frame()
+        .background(Color.lightGray)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .padding()
+    }
+}
+
+
+struct Previews_Search_Previews: PreviewProvider {
+    static var previews: some View {
+        Search()
+    }
+}
